@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CalTrack</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="show_password">Show password</string>
+    <string name="new_user"><u>No account yet? Create one</u></string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_dashboard">All Photos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="logout">Logout</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="menu_item_delete">Delete</string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/colorPrimary"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".PageAdapter.FragmentPageAdapter">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernameContainer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp"
+        android:theme="@style/TextLabel"
+        app:layout_constraintBottom_toTopOf="@+id/emailContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/usernameReg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:hint="@string/username"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:textColor="@drawable/textfocuscolor" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailContainer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        app:layout_constraintBottom_toTopOf="@+id/passwordContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameContainer">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@drawable/textfocuscolor" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordContainer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@id/emailContainer"
+        android:theme="@style/TextLabel"
+        app:layout_constraintBottom_toTopOf="@+id/confPasswordContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailContainer">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwordReg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/confPasswordContainer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@id/passwordContainer"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:theme="@style/TextLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordContainer">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/confPasswordReg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:hint="@string/conf_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/registerBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordContainer"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/register"
+                android:textAppearance="@android:style/TextAppearance.Material.Button"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".808" />
+
+
+</android.support.constraint.ConstraintLayout>
